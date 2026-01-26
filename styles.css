@@ -169,3 +169,14 @@ pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberati
     grid-template-columns: 1fr;
   }
 }
+
+.profile-pic {
+  width: 140px;
+  height: 140px;
+  object-fit: cover;
+  border-radius: 50%;
+  display: block;
+  margin: 12px auto 18px auto;
+  border: 2px solid var(--border);
+}
+
