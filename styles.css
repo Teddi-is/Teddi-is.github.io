@@ -238,3 +238,9 @@ pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberati
 .gallery-item a.zoom:hover img {
   transform: scale(1.01);
 }
+
+/* ---------- IMAGE ROTATION ---------- */
+
+.rotate-ccw {
+  transform: rotate(-90deg);
+}
