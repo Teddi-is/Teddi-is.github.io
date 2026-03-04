@@ -1,18 +1,349 @@
-<!DOCTYPE html>
-<html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Your Title Here</title>
-</head>
-<body>
-    <h1>Welcome to My Website</h1>
-    <p>This is a sample paragraph.</p>
-    <p>This is another paragraph.</p>
-    <!-- Remove empty paragraph tag -->
-    <p>This paragraph has content.</p>
-    <footer>
-        <p>Footer Content</p>
-    </footer>
-</body>
+<!doctype html>
+<html lang="is">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Teddi – VÉL608G Portfolio</title>
+    <meta name="description" content="Portfolio fyrir VÉL608G – Tölvustudd Framleiðsla" />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+
+  <body>
+    <header class="site-header">
+      <div class="container header-top">
+        <div>
+          <p class="kicker">VÉL608G – Tölvustudd Framleiðsla</p>
+          <h1>Portfolio</h1>
+          <p class="subtitle">Um mig, ferilskrá og verkefni.</p>
+        </div>
+
+        <div class="card mini-card">
+          <div class="row">
+            <span class="dot"></span>
+            <p class="muted small" style="margin:0;">
+              Repo:
+              <a
+                id="repoLink"
+                href="https://github.com/Teddi-is/Teddi-is.github.io"
+                target="_blank"
+                rel="noreferrer"
+              >
+                Teddi-is/Teddi-is.github.io
+              </a>
+            </p>
+          </div>
+          <p class="muted small" style="margin:10px 0 0;"></p>
+        </div>
+      </div>
+
+      <div class="container tabs-wrap">
+        <nav class="tabs" aria-label="Flipa valmynd">
+          <button class="tab is-active" data-tab="home">Forsíða</button>
+          <button class="tab" data-tab="v1">Verkefni 1</button>
+          <button class="tab" data-tab="v2">Verkefni 2</button>
+          <button class="tab" data-tab="v3">Verkefni 3</button>
+          <button class="tab" data-tab="v4">Verkefni 4</button>
+          <button class="tab" data-tab="v5">Verkefni 5</button>
+          <button class="tab" data-tab="v6">Verkefni 6</button>
+          <button class="tab" data-tab="final">Lokaverkefni</button>
+        </nav>
+      </div>
+    </header>
+
+    <main class="container">
+
+      <!-- HOME -->
+      <section class="panel is-active" id="home" role="tabpanel">
+        <div class="grid-2">
+
+          <div class="card">
+            <h2 class="card-title">Um mig</h2>
+
+            <p>
+              Ég heiti Theodór Ísak og er á þriðja ári í vélaverkfræði í Háskóla Íslands.
+              Hér inni verða sett verkefni úr tölvustuddri framleiðslu. Það sem ég leitast
+              eftir að fá út úr þessu námskeiði er að læra betur á Git og auka skilning minn
+              á 3D prentun/hönnun.
+            </p>
+
+            <ul class="list">
+              <li><strong>Staðsetning:</strong> Reykjavík</li>
+              <li><strong>Áhugasvið:</strong> CAD, hönnun, Radíó</li>
+              <li><strong>Helstu verkfæri:</strong> Fusion 360, Bambu, GitHub, GQRX</li>
+            </ul>
+
+            <div class="info-box">
+              <p class="small muted" style="margin:0;">Email: tis19@hi.is</p>
+            </div>
+          </div>
+
+          <div class="card">
+            <h2 class="card-title">Ferilskrá</h2>
+
+            <img
+              src="assets/profile.jpg"
+              alt="Theodór Ísak"
+              class="profile-pic"
+            />
+
+            <h3 class="subhead">Menntun</h3>
+            <ul class="timeline">
+              <li>
+                <div class="time">2023 – 20XX</div>
+                <div>
+                  <strong>Vélaverkfræði í HÍ</strong><br />
+                  <span class="muted">Er á þriðja ári í vélaverkfræði í HÍ</span>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="subhead">Starfsreynsla</h3>
+            <ul class="timeline">
+              <li>
+                <div class="time">2025 – 20XX</div>
+                <div>
+                  <strong>DS Lausnir</strong><br />
+                  <span class="muted">
+                    Vinn sem verkefnastjóri hjá DS Lausnum ásamt því að sinna
+                    kranavinnu og viðhaldi.
+                  </span>
+                </div>
+              </li>
+            </ul>
+
+            <h3 class="subhead">Tæknifærni</h3>
+            <div class="tags">
+              <span class="tag">CAD</span>
+              <span class="tag">3D prentun</span>
+              <span class="tag">GitHub</span>
+              <span class="tag">GQRX</span>
+            </div>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- VERKEFNI 1 -->
+      <section class="panel" id="v1" role="tabpanel">
+        <div class="card">
+
+          <h2 class="card-title">Verkefni 1</h2>
+
+          <p class="muted">
+            Í þessu verkefni bjó ég til þessa síðu og notaðist við ChatGPT til að
+            setja upp grunninn að HTML skránni. Síðan fínpússaði ég hana áfram
+            með áherslu á stílhreint útlit og einfalda notkun.
+          </p>
+
+          <div class="grid-2">
+            <div>
+              <h3 class="subhead">Hönnunarforsendur</h3>
+
+              <ul class="list">
+                <li><strong>Einföld síða í notkun.</strong></li>
+                <li><strong>Stílhrein framsetning.</strong></li>
+                <li><strong>Aðstoð frá ChatGPT.</strong></li>
+                <li><strong>Aðstoð frá félaga í hugbúnaðarverkfræði.</strong></li>
+              </ul>
+            </div>
+          </div>
+
+          <hr class="sep" />
+
+          <h3 class="subhead">Myndir</h3>
+          <p class="muted small">
+            Hér er pláss til að setja inn myndir ef það þarf í verkefnum.
+          </p>
+
+          <div class="gallery">
+            <figure class="gallery-item">
+              <img src="assets/project1/img1.jpg" alt="Verkefni 1 – mynd 1" loading="lazy" />
+              <figcaption>Mynd 1</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="assets/project1/img2.jpg" alt="Verkefni 1 – mynd 2" loading="lazy" />
+              <figcaption>Mynd 2</figcaption>
+            </figure>
+
+            <figure class="gallery-item">
+              <img src="assets/project1/img3.jpg" alt="Verkefni 1 – mynd 3" loading="lazy" />
+              <figcaption>Mynd 3</figcaption>
+            </figure>
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- VERKEFNI 2 -->
+      <section class="panel" id="v2" role="tabpanel">
+        <div class="card">
+
+          <h2 class="card-title">
+            Verkefni 2 – 3D prentun (box fyrir NanoVNA)
+          </h2>
+
+          <p class="muted">
+            Í þessu verkefni endurhannaði ég plastboxið sem fylgir NanoVNA
+            tækinu.
+          </p>
+
+          <hr class="sep" />
+
+          <div class="gallery">
+
+            <!-- 1 -->
+            <figure class="gallery-item">
+              <a href="#img1">
+                <img src="assets/project2/gamla_box.JPEG" class="rotate-ccw" />
+              </a>
+              <figcaption>
+                Gamla boxið – viðmið sem nýja hönnunin byggði á.
+              </figcaption>
+            </figure>
+
+            <!-- 2 -->
+            <figure class="gallery-item">
+              <a href="#img2">
+                <img src="assets/project2/stuta_geymsla.JPEG" />
+              </a>
+              <figcaption>Stúta geymsla í gamla boxinu.</figcaption>
+            </figure>
+
+            <!-- 3 -->
+            <figure class="gallery-item">
+              <a href="#img3">
+                <img src="assets/project2/stutur1.JPEG" />
+              </a>
+              <figcaption>Stútur (ofanfrá) – sexhyrnd lögun.</figcaption>
+            </figure>
+
+            <!-- 4 -->
+            <figure class="gallery-item">
+              <a href="#img4">
+                <img src="assets/project2/stutur2.JPEG" />
+              </a>
+              <figcaption>Stútur frá hlið með radíus.</figcaption>
+            </figure>
+
+            <!-- 5 -->
+            <figure class="gallery-item">
+              <a href="#img5">
+                <img src="assets/project2/stuta_prufa_cad.JPEG" />
+              </a>
+              <figcaption>CAD prufur fyrir geymslu stúta.</figcaption>
+            </figure>
+
+            <!-- 6 -->
+            <figure class="gallery-item">
+              <a href="#img6">
+                <img src="assets/project2/prufu_stykki.JPEG" class="rotate-ccw" />
+              </a>
+              <figcaption>Tilraunastykki fyrir tolerances.</figcaption>
+            </figure>
+
+            <!-- 7 -->
+            <figure class="gallery-item">
+              <a href="#img7">
+                <img src="assets/project2/stuta_prufa_plast.JPEG" />
+              </a>
+              <figcaption>Prentaðar prufuútfærslur.</figcaption>
+            </figure>
+
+            <!-- 8 -->
+            <figure class="gallery-item">
+              <a href="#img8">
+                <img src="assets/project2/final_cad.JPEG" />
+              </a>
+              <figcaption>Loka CAD hönnun.</figcaption>
+            </figure>
+
+            <!-- 9 -->
+            <figure class="gallery-item">
+              <a href="#img9">
+                <img src="assets/project2/gamla_vs_nyja.JPEG" class="rotate-ccw" />
+              </a>
+              <figcaption>
+                Samanburður á gamla og nýja boxinu.
+              </figcaption>
+            </figure>
+
+            <!-- 10 -->
+            <figure class="gallery-item">
+              <a href="#img10">
+                <img src="assets/project2/nyja.JPEG" class="rotate-ccw" />
+              </a>
+              <figcaption>Nýja boxið með öllum hlutum.</figcaption>
+            </figure>
+
+          </div>
+
+        </div>
+      </section>
+
+
+      <!-- LIGHTBOX -->
+      <div id="img1" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/gamla_box.JPEG" />
+      </div>
+
+      <div id="img2" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/stuta_geymsla.JPEG" />
+      </div>
+
+      <div id="img3" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/stutur1.JPEG" />
+      </div>
+
+      <div id="img4" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/stutur2.JPEG" />
+      </div>
+
+      <div id="img5" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/stuta_prufa_cad.JPEG" />
+      </div>
+
+      <div id="img6" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/prufu_stykki.JPEG" />
+      </div>
+
+      <div id="img7" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/stuta_prufa_plast.JPEG" />
+      </div>
+
+      <div id="img8" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/final_cad.JPEG" />
+      </div>
+
+      <div id="img9" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/gamla_vs_nyja.JPEG" />
+      </div>
+
+      <div id="img10" class="lightbox">
+        <a href="#v2" class="lightbox-close">×</a>
+        <img src="assets/project2/nyja.JPEG" />
+      </div>
+
+
+      <footer class="site-footer">
+        <p class="muted small">
+          © <span id="year"></span> Theodór Ísak — VÉL608G
+        </p>
+      </footer>
+
+    </main>
+
+    <script src="script.js"></script>
+  </body>
 </html>
