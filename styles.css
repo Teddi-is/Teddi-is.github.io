@@ -188,3 +188,53 @@ pre,code{font-family:ui-monospace,SFMono-Regular,Menlo,Monaco,Consolas,"Liberati
   padding: 10px;
   border-radius: 8px;
 }
+
+/* --- Lightbox (CSS-only) --- */
+.lightbox {
+  display: none;
+  position: fixed;
+  inset: 0;
+  background: rgba(0,0,0,0.85);
+  padding: 24px;
+  z-index: 9999;
+}
+
+.lightbox:target {
+  display: grid;
+  place-items: center;
+}
+
+.lightbox img {
+  max-width: min(1100px, 95vw);
+  max-height: 90vh;
+  width: auto;
+  height: auto;
+  border-radius: 12px;
+  background: #111;
+}
+
+.lightbox .close {
+  position: fixed;
+  top: 16px;
+  right: 16px;
+  font-size: 28px;
+  line-height: 1;
+  text-decoration: none;
+  color: white;
+  background: rgba(0,0,0,0.5);
+  border-radius: 999px;
+  padding: 8px 14px;
+}
+
+.gallery-item a.zoom {
+  display: block;
+  cursor: zoom-in;
+}
+
+.gallery-item a.zoom img {
+  transition: transform 0.15s ease;
+}
+
+.gallery-item a.zoom:hover img {
+  transform: scale(1.01);
+}
